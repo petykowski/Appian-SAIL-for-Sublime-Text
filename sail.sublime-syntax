@@ -1,0 +1,124 @@
+%YAML 1.2
+
+######################################################################
+# File:             Appian SAIL for Sublime Text
+# Author:           Sean Petykowski <sean.petykowski@appian.com>
+# Version:          1.0
+# Appian Release:   17.2+ to 18.4
+######################################################################
+
+name: Appian SAIL
+file_extensions: [sail, appian]
+scope: source.sail
+
+contexts:
+  main:
+    - match: \/\*
+      push: comment
+
+    - match: 'local!(.*?)(?=\W)'
+      scope: variable
+    - match: 'fv!(.*?)(?=\s)'
+      scope: variable
+    - match: 'ri!(.*?)(?=\s|,)'
+      scope: variable
+    - match: 'rf!(.*?)(?=\W)'
+      scope: variable
+    - match: 'rp!(.*?)(?=\s)'
+      scope: variable
+    - match: 'tp!(.*?)(?=\s|,)'
+      scope: variable
+    - match: 'pv!(.*?)(?=\s|,)'
+      scope: variable
+    - match: 'pp!(.*?)(?=\s|,)'
+      scope: variable
+    - match: 'ac!(.*?)(?=\s|,)'
+      scope: variable
+    - match: 'save!(.*?)(?=\s|,)'
+      scope: variable
+
+    - match: 'rule!(.*?)(?=\W)'
+      scope: entity.name.function
+    - match: 'cons!(.*?)(?=\W)'
+      scope: entity.name.function
+
+    - match: \b(null|true|false)\b
+      scope: keyword.boolean
+
+    - match: '".*?"'
+      scope: string
+
+    - match: \'.*?\'
+      scope: string
+
+    - match: \d
+      scope: constant.numeric
+
+    - match: \w*(?=\:)
+      scope: variable.parameter.function
+
+    - match: \+|\*|\-|\=
+      scope: keyword.operator
+
+    - match: 'fn!(.*?)(?=\W)'
+      scope: keyword
+
+    - match: \b(a!flatten|append|index|insert|joinarray|ldrop|length|rdrop|remove|reverse|updatearray|where|wherecontains)(?=\()\b
+      scope: keyword.array
+
+    - match: \b(contains|difference|intersection|symmetricdifference|union)(?=\()\b
+      scope: keyword.array.set
+
+    - match: \b(bin2dec|bin2hex|bin2oct|dec2bin|dec2hex|dec2oct|hex2bin|hex2dec|hex2oct|oct2bin|oct2dec|oct2hex)(?=\()\b
+      scope: keyword.baseConversion
+
+    - match: \b(displayvalue|externalize|internalize|toboolean|tocommunity|todate|todatetime|todecimal|todocument|toemailaddress|toemailrecipient|tofolder|tointeger|tointervalds|toknowledgecenter|tostring|totime|touniformstring)(?=\()\b
+      scope: keyword.conversion
+
+    - match: \b(caladddays|caladdhours|calisworkday|calisworktime|calworkdays|calworkhours|date|datetime|datevalue|day|dayofyear|days360|daysinmonth|edate|eomonth|gmt|hour|intervalds|isleapyear|lastndays|local|milli|minute|month|networkdays|now|second|time|timevalue|timezone|timezoneid|today|weekday|weeknum|workday|year|yearfrac)(?=\()\b
+      scope: keyword.dateAndTime
+
+    - match: \b(a!save|bind|load|with)(?=\()\b
+      scope: keyword.evaluation
+
+    - match: \b(cast|error|infinity|isinfinite|isnegativeinfinity|isnull|ispositiveinfinity|nan|runtimetypeof|typename|typeof)(?=\()\b
+      scope: keyword.informational
+
+    - match: \b(and|choose|false|if|not|or|true)(?=\()\b
+      scope: keyword.logical
+
+    - match: \b(a!forEach|all|any|apply|filter|merge|none|reduce|reject)(?=\()\b
+      scope: keyword.looping
+
+    - match: \b(abs|ceiling|combin|e|enumerate|even|exp|fact|factdouble|floor|int|ln|log|mod|mround|multinomial|odd|pi|power|product|quotient|rand|round|rounddown|roundup|sign|sqrt|sqrtpi|sum|sumsq|trunc)(?=\()\b
+      scope: keyword.mathematical
+
+    - match: \b(a!groupMembers|a!groupsByName|a!groupsByType|getdistinctusers|getgroupattribute|group|isusermemberofgroup|isusernametaken|loggedInUser|supervisor|togroup|topeople|touser|user)(?=\()\b
+      scope: keyword.people
+
+    - match: \b(averagetaskcompletiontimeforprocessmodel|averagetasklagtimeforprocessmodel|averagetaskworktimeforprocessmodel|community|datetext|document|folder|isInDaylightSavingTime|isNativePhone|isNativeTablet|knowledgecenter|numontimeprocessesforprocessmodel|numontimetasksforprocessmodel|numoverdueprocessesforprocessmodel|numoverduetasksforprocessmodel|numprocessesforprocessmodelforstatus|numtasksforprocessmodelforstatus|offsetFromGMT|property|queryrecord|repeat|todatasubset|topaginginfo|torecord|toxml|urlforrecord|urlwithparameters|userdate|userdatetime|userdatevalue|userday|userdayofyear|userdaysinmonth|useredate|usereomonth|userisleapyear|userlocale|usermonth|usertimezone|userweekday|userweeknum|useryear|webservicequery|webservicewrite|xpathdocument|xpathsnippet)(?=\()\b
+      scope: keyword.scripting
+
+    - match: \b(avedev|average|count|frequency|gcd|geomean|harmean|lcm|lookup|max|median|min|mode|rank|stdev|stdevp|var|varp)(?=\()\b
+      scope: keyword.statistical
+
+    - match: \b(a!applyComponents|a!dataSubset|a!entityData|a!entityDataIdentifiers|a!facet|a!facetOption|a!fromJson|a!httpResponse|a!iconIndicator|a!iconNewsEvent|a!integrationError|a!jsonPath|a!listViewItem|a!pagingInfo|a!query|a!queryAggregation|a!queryAggregationColumn|a!queryColumn|a!queryEntity|a!queryFilter|a!queryLogicalExpression|a!queryProcessAnalytics|a!querySelection|a!sentimentScore|a!sortInfo|a!toJson|a!toRecordIdentifier|a!userRecordFacets|a!userRecordIdentifier|a!userRecordListViewItem)(?=\()\b
+      scope: keyword.system
+
+    - match: \b(a!swissFranc|cents|char|charat|clean|cleanwith|code|concat|currency|dollar|euro|exact|extract|extractanswers|find|fixed|initials|insertkey|insertkeyval|insertquestions|keyval|left|leftb|len|lenb|like|lower|mid|midb|padleft|padright|pound|proper|replace|replaceb|rept|resource|right|search|searchb|soundex|split|strip|stripHtml|stripwith|substitute|text|toHtml|trim|upper|value|yen)(?=\()\b
+      scope: keyword.text
+
+    - match: \b(acos|acosh|asin|asinh|atan|atanh|cos|cosh|degrees|radians|sin|sinh|tan|tanh)(?=\()\b
+      scope: keyword.trigonometry
+
+    - match: \b(a!dashboardLayoutColumns|a!formLayoutColumns|a!httpQuery|a!httpWrite|a!sapInvokeWriter|a!sectionLayoutColumns|byReference|fromHtml|getprocessemail|getprocessmodelemail|linktocommunity|linktocommunityinternal|linktodocument|linktodocumentinternal|linktofolder|linktofolderinternal|linktogroup|linktogroupinternal|linktoknowledgecenter|linktoknowledgecenterinternal|linktoprocessdashboard|linktoprocessdashboardinternal|linktoprocessmodeldashboard|linktoprocessmodeldashboardinternal|linktouser|linktouserinternal|page|todiscussionthread|toforum|tomessage|topage|toportlet)(?=\()\b
+      scope: invalid.deprecated
+
+    - match: 'a!(.*?)(?=\W)'
+      scope: keyword
+
+
+  comment:
+    - meta_scope: comment
+    - match: \*\/
+      pop: true
