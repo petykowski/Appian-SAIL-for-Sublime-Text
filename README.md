@@ -11,9 +11,9 @@ The Appian SAIL for Sublime Text package provides Appian SAIL syntax support for
 
 ## Installation
 
-1. Download the Appian SAIL for Sublime Text.zip file and then unzip to folder. 
-2. Navigate the to the _Packages_ directory by selecting the menu bar, then `Preferences -> Browse Packages...`
-3. After the Windows Explorer/Finder Window opens, copy the unzipped folder to this location.
+1. Download the [lastest release](https://github.com/spetykowski/Appian-SAIL-for-Sublime-Text/releases/latest) of Appian SAIL for Sublime Text and unzip. 
+2. Navigate the to the _Packages_ directory of Sublime Text 3 by selecting the menu bar, then `Preferences -> Browse Packages...`
+3. After the Finder window opens (Explorer window for Windows users), copy the unzipped folder to this location.
 
 ## Activation
 
