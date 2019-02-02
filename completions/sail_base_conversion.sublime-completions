@@ -1,0 +1,19 @@
+{
+   "scope": "source.sail",
+
+   "completions":
+   [
+      { "trigger" : "bin2dec\tBase Conversion", "contents" : "bin2dec(${1:value})" },
+      { "trigger" : "bin2hex\tBase Conversion", "contents" : "bin2hex(${1:value}, ${2:place})" },
+      { "trigger" : "bin2oct\tBase Conversion", "contents" : "bin2oct(${1:value}, ${2:place})" },
+      { "trigger" : "dec2bin\tBase Conversion", "contents" : "dec2bin(${1:value}, ${2:place})" },
+      { "trigger" : "dec2hex\tBase Conversion", "contents" : "dec2hex(${1:value}, ${2:place})" },
+      { "trigger" : "dec2oct\tBase Conversion", "contents" : "dec2oct(${1:value}, ${2:place})" },
+      { "trigger" : "hex2bin\tBase Conversion", "contents" : "hex2bin(${1:value}, ${2:place})" },
+      { "trigger" : "hex2dec\tBase Conversion", "contents" : "hex2dec(${1:value})" },
+      { "trigger" : "hex2oct\tBase Conversion", "contents" : "hex2oct(${1:value}, ${2:place})" },
+      { "trigger" : "oct2bin\tBase Conversion", "contents" : "oct2bin(${1:value}, ${2:place})" },
+      { "trigger" : "oct2dec\tBase Conversion", "contents" : "oct2dec(${1:value})" },
+      { "trigger" : "oct2hex\tBase Conversion", "contents" : "oct2hex(${1:value}, ${2:place})" }
+   ]
+}

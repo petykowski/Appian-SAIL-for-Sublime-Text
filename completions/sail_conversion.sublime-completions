@@ -1,0 +1,25 @@
+{
+   "scope": "source.sail",
+
+   "completions":
+   [
+      { "trigger" : "displayvalue\tConversion", "contents" : "displayvalue(${1:value}, ${2:inArray}, ${3:replacement}, ${4:default})" },
+      { "trigger" : "externalize\tConversion", "contents" : "externalize(${1:value})" },
+      { "trigger" : "internalize\tConversion", "contents" : "internalize(${1:externalizedText}, ${2:default})" },
+      { "trigger" : "toboolean\tConversion", "contents" : "toboolean(${1:value})" },
+      { "trigger" : "tocommunity\tConversion", "contents" : "tocommunity(${1:value})" },
+      { "trigger" : "todate\tConversion", "contents" : "todate(${1:value})" },
+      { "trigger" : "todatetime\tConversion", "contents" : "todatetime(${1:value})" },
+      { "trigger" : "todecimal\tConversion", "contents" : "todecimal(${1:value})" },
+      { "trigger" : "todocument\tConversion", "contents" : "todocument(${1:value})" },
+      { "trigger" : "toemailaddress\tConversion", "contents" : "toemailaddress(${1:value})" },
+      { "trigger" : "toemailrecipient\tConversion", "contents" : "toemailrecipient(${1:value})" },
+      { "trigger" : "tofolder\tConversion", "contents" : "tofolder(${1:value})" },
+      { "trigger" : "tointeger\tConversion", "contents" : "tointeger(${1:value})" },
+      { "trigger" : "tointervalds\tConversion", "contents" : "tointervalds(${1:value})" },
+      { "trigger" : "toknowledgecenter\tConversion", "contents" : "toknowledgecenter(${1:value})" },
+      { "trigger" : "tostring\tConversion", "contents" : "tostring(${1:value})" },
+      { "trigger" : "totime\tConversion", "contents" : "totime(${1:value})" },
+      { "trigger" : "touniformstring\tConversion", "contents" : "touniformstring(${1:value})" }
+   ]
+}

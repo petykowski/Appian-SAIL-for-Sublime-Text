@@ -1,0 +1,45 @@
+{
+   "scope": "source.sail",
+
+   "completions":
+   [
+      { "trigger" : "caladddays\tDate And Time", "contents" : "caladddays(${1:start_datetime}, ${2:number}, ${3:[calendar_name]})" },
+      { "trigger" : "caladdhours\tDate And Time", "contents" : "caladdhours(${1:start_datetime}, ${2:number}, ${3:[calendar_name]})" },
+      { "trigger" : "calisworkday\tDate And Time", "contents" : "calisworkday(${1:datetime}, ${2:[calendar_name]})" },
+      { "trigger" : "calisworktime\tDate And Time", "contents" : "calisworktime(${1:datetime}, ${2:[calendar_name]})" },
+      { "trigger" : "calworkdays\tDate And Time", "contents" : "calworkdays(${1:start_datetime}, ${2:end_datetime}, ${3:[calendar_name]})" },
+      { "trigger" : "calworkhours\tDate And Time", "contents" : "calworkhours(${1:start_datetime}, ${2:end_datetime}, ${3:[calendar_name]})" },
+      { "trigger" : "date\tDate And Time", "contents" : "date(${1:year}, ${2:month}, ${3:day})" },
+      { "trigger" : "datetime\tDate And Time", "contents" : "datetime(${1:year}, ${2:month}, ${3:day}, ${4:[hour]}, ${5:[minute]}, ${6:[second]})" },
+      { "trigger" : "datevalue\tDate And Time", "contents" : "datevalue(${1:value})" },
+      { "trigger" : "day\tDate And Time", "contents" : "day(${1:date})" },
+      { "trigger" : "dayofyear\tDate And Time", "contents" : "dayofyear(${1:date})" },
+      { "trigger" : "days360\tDate And Time", "contents" : "days360(${1:start_date}, ${2:end_date}, ${3:method})" },
+      
+      { "trigger" : "daysinmonth\tDate And Time", "contents" : "daysinmonth(${1:value})" },
+      { "trigger" : "edate\tDate And Time", "contents" : "edate(${1:value})" },
+      { "trigger" : "eomonth\tDate And Time", "contents" : "eomonth(${1:value})" },
+      { "trigger" : "gmt\tDate And Time", "contents" : "gmt(${1:value})" },
+      { "trigger" : "hour\tDate And Time", "contents" : "hour(${1:value})" },
+      { "trigger" : "intervalds\tDate And Time", "contents" : "intervalds(${1:value})" },
+      { "trigger" : "isleapyear\tDate And Time", "contents" : "isleapyear(${1:value})" },
+      { "trigger" : "lastndays\tDate And Time", "contents" : "lastndays(${1:value})" },
+      { "trigger" : "local\tDate And Time", "contents" : "local(${1:value})" },
+      { "trigger" : "milli\tDate And Time", "contents" : "milli(${1:value})" },
+      { "trigger" : "minute\tDate And Time", "contents" : "minute(${1:value})" },
+      { "trigger" : "month\tDate And Time", "contents" : "month(${1:value})" },
+      { "trigger" : "networkdays\tDate And Time", "contents" : "networkdays(${1:value})" },
+      { "trigger" : "now\tDate And Time", "contents" : "now(${1:value})" },
+      { "trigger" : "second\tDate And Time", "contents" : "second(${1:value})" },
+      { "trigger" : "time\tDate And Time", "contents" : "time(${1:value})" },
+      { "trigger" : "timevalue\tDate And Time", "contents" : "timevalue(${1:value})" },
+      { "trigger" : "timezone\tDate And Time", "contents" : "timezone(${1:value})" },
+      { "trigger" : "timezoneid\tDate And Time", "contents" : "timezoneid(${1:value})" },
+      { "trigger" : "today\tDate And Time", "contents" : "today(${1:value})" },
+      { "trigger" : "weekday\tDate And Time", "contents" : "weekday(${1:value})" },
+      { "trigger" : "weeknum\tDate And Time", "contents" : "weeknum(${1:value})" },
+      { "trigger" : "workday\tDate And Time", "contents" : "workday(${1:value})" },
+      { "trigger" : "year\tDate And Time", "contents" : "year(${1:value})" },
+      { "trigger" : "yearfrac\tDate And Time", "contents" : "yearfrac(${1:value})" }
+   ]
+}

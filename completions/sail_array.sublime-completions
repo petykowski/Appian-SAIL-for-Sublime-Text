@@ -1,0 +1,26 @@
+{
+   "scope": "source.sail",
+
+   "completions":
+   [
+      { "trigger" : "flatten\tArray", "contents" : "a!flatten(${1:array})" },
+      { "trigger" : "append\tArray", "contents" : "append(${1:array}, ${2:value})" },
+      { "trigger" : "index\tArray", "contents" : "index(${1:array}, ${2:index}, ${3:default})" },
+      { "trigger" : "insert\tArray", "contents" : "insert(${1:array}, ${2:value}, ${3:index})" },
+      { "trigger" : "joinarray\tArray", "contents" : "joinarray(${1:array}, ${2:separator})" },
+      { "trigger" : "ldrop\tArray", "contents" : "ldrop(${1:array}, ${2:number})" },
+      { "trigger" : "length\tArray", "contents" : "length(${1:array})" },
+      { "trigger" : "rdrop\tArray", "contents" : "rdrop(${1:array}, ${2:number})" },
+      { "trigger" : "remove\tArray", "contents" : "remove(${1:array}, ${2:index})" },
+      { "trigger" : "reverse\tArray", "contents" : "reverse(${1:array})" },
+      { "trigger" : "updatearray\tArray", "contents" : "updatearray(${1:array}, ${2:index}, ${3:value})" },
+      { "trigger" : "where\tArray", "contents" : "where(${1:booleanArray}, ${2:default})" },
+      { "trigger" : "wherecontains\tArray", "contents" : "wherecontains(${1:values}, ${2:array})" },
+
+      { "trigger" : "contains\tArray (Set)", "contents" : "contains(${1:array}, ${2:value})" },
+      { "trigger" : "difference\tArray (Set)", "contents" : "difference(${1:array1}, ${2:array2})" },
+      { "trigger" : "intersection\tArray (Set)", "contents" : "intersection(${1:array1}, ${2:array2})" },
+      { "trigger" : "symmetricdifference\tArray (Set)", "contents" : "symmetricdifference(${1:array1}, ${2:array2})" },
+      { "trigger" : "union\tArray (Set)", "contents" : "union(${1:array1}, ${2:array2})" }
+   ]
+}
