@@ -1,5 +1,5 @@
 {
-   "scope": "source.sail",
+   "scope": "source.sail - variable",
 
    "completions":
    [
@@ -15,7 +15,7 @@
       { "trigger" : "day\tDate And Time", "contents" : "day(${1:date})" },
       { "trigger" : "dayofyear\tDate And Time", "contents" : "dayofyear(${1:date})" },
       { "trigger" : "days360\tDate And Time", "contents" : "days360(${1:start_date}, ${2:end_date}, ${3:method})" },
-      
+
       { "trigger" : "daysinmonth\tDate And Time", "contents" : "daysinmonth(${1:value})" },
       { "trigger" : "edate\tDate And Time", "contents" : "edate(${1:value})" },
       { "trigger" : "eomonth\tDate And Time", "contents" : "eomonth(${1:value})" },

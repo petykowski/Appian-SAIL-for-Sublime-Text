@@ -16,8 +16,8 @@ contexts:
     - match: \/\*
       push: comment
 
-    - match: 'local!(.*?)(?=\W)'
-      scope: variable
+    - match: 'local!(.*?)'
+      push: variable
     - match: 'fv!(.*?)(?=\s)'
       scope: variable
     - match: 'ri!(.*?)(?=\s|,)'
@@ -121,4 +121,9 @@ contexts:
   comment:
     - meta_scope: comment
     - match: \*\/
+      pop: true
+
+  variable:
+    - meta_scope: variable
+    - match: (?=\W)
       pop: true
