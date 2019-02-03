@@ -1,0 +1,14 @@
+{
+   "scope": "source.sail - variable",
+
+   "completions":
+   [
+      { "trigger" : "and\tLogical", "contents" : "and(${1:value})" },
+      { "trigger" : "choose\tLogical", "contents" : "choose(${1:index}, ${2:choice1}, ${3:choiceN})" },
+      { "trigger" : "false\tLogical", "contents" : "false()" },
+      { "trigger" : "if\tLogical", "contents" : "if(${1:condition}, ${2:valueIfTrue}, ${3:valueIfFalse})" },
+      { "trigger" : "not\tLogical", "contents" : "not(${1:value})" },
+      { "trigger" : "or\tLogical", "contents" : "or(${1:value})" },
+      { "trigger" : "true\tLogical", "contents" : "true()" }
+   ]
+}

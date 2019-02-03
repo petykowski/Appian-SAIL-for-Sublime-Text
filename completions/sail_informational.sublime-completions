@@ -1,0 +1,18 @@
+{
+   "scope": "source.sail - variable",
+
+   "completions":
+   [
+      { "trigger" : "cast\tInformational", "contents" : "cast(${1:typeNumber}, ${2:value})" },
+      { "trigger" : "error\tInformational", "contents" : "error(${1:message})" },
+      { "trigger" : "infinity\tInformational", "contents" : "infinity(${1:number1}, ${2:numberN})" },
+      { "trigger" : "isinfinite\tInformational", "contents" : "isinfinite(${1:number1}, ${2:numberN})" },
+      { "trigger" : "isnegativeinfinity\tInformational", "contents" : "isnegativeinfinity()" },
+      { "trigger" : "isnull\tInformational", "contents" : "isnull(${1:value})" },
+      { "trigger" : "ispositiveinfinity\tInformational", "contents" : "ispositiveinfinity(${1:number1}, ${2:numberN})" },
+      { "trigger" : "nan\tInformational", "contents" : "nan()" },
+      { "trigger" : "runtimetypeof\tInformational", "contents" : "runtimetypeof(${1:value})" },
+      { "trigger" : "typename\tInformational", "contents" : "typename(${1:typeNumber})" },
+      { "trigger" : "typeof\tInformational", "contents" : "typeof(${1:value})" }
+   ]
+}

@@ -1,0 +1,11 @@
+{
+   "scope": "source.sail - variable",
+
+   "completions":
+   [
+      { "trigger" : "a!save\tEvaluation", "contents" : "a!save(${1:target}, ${2:value})" },
+      { "trigger" : "bind\tEvaluation", "contents" : "bind(${1:get}, ${2:set})" },
+      { "trigger" : "load\tEvaluation", "contents" : "load(${1:localVar1}:${2:expression})" },
+      { "trigger" : "with\tEvaluation", "contents" : "with(${1:localVar1}:${2:expression})" }
+   ]
+}
