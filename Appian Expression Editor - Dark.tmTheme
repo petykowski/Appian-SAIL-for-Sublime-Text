@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Name:         Appian Expression Editor
+  Name:         Appian Expression Editor Dark
   Author:       Sean Petykowski <sean.petykowski@appian.com>
   Version:      1.0
-  Description:  A color scheme for Sublime Text based on the Appian SAIL Expression Editor.
+  Description:  A dark color scheme for Sublime Text based on the Appian SAIL Expression Editor.
 -->
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+  <!--
+  Dark Blue: #272f34
+  Medium Blue: #4d5c66
+  Mediumn Light Blue: #39454d
+  Dark Grat: #b3b3b3
+  Light Gray: #e6eef0
+  Green: #36b54b
+  Blue: #5c7eff
+  Light Blue: #55b6f2
+  Orange: #e5b17c
+  -->
 <dict>
   <key>name</key>
-  <string>AppianExpressionEditor</string>
+  <string>AppianExpressionEditorDark</string>
   <key>semanticClass</key>
-  <string>theme.light.appianExpressionEditor</string>
+  <string>theme.dark.appianExpressionEditor</string>
   <key>uuid</key>
   <string></string>
   <key>colorSpaceName</key>
@@ -19,7 +30,7 @@
   <key>author</key>
   <string>Sean Petykowski sean.petykowski@appian.com</string>
   <key>comment</key>
-  <string>A color scheme for Sublime Text based on the Appian SAIL Expression Editor.</string>
+  <string>A dark color scheme for Sublime Text based on the Appian SAIL Expression Editor.</string>
   <key>settings</key>
   <array>
     <dict>
@@ -28,25 +39,25 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#3f3f3f</string>
+        <string>#e6eef0</string>
         <key>background</key>
-        <string>#ffffff</string>
+        <string>#272f34</string>
         <key>bracketsOptions</key>
         <string>foreground</string>
         <key>bracketsForeground</key>
         <string>#84df44</string>
         <key>caret</key>
-        <string>#3f3f3f</string>
+        <string>#ffffff</string>
         <key>lineHighlight</key>
-        <string>#eef3f7</string>
+        <string>#39454d</string>
         <key>gutter</key>
-        <string>#f0f0f0</string>
+        <string>#272f34</string>
         <key>gutterForeground</key>
-        <string>#3f3f3f</string>
+        <string>#e6eef0</string>
         <key>selection</key>
-        <string>#d6d4ee</string>
+        <string>#4d5c66</string>
         <key>selectionBorder</key>
-        <string>#d6d4ee</string>
+        <string>#4d5c66</string>
       </dict>
     </dict>
     <dict>
@@ -57,7 +68,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#6cb636</string>
+        <string>#36b54b</string>
       </dict>
     </dict>
     <dict>
@@ -68,7 +79,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#999999</string>
+        <string>#b3b3b3</string>
       </dict>
     </dict>
     <dict>
@@ -90,7 +101,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#3f3f3f</string>
+        <string>#e6eef0</string>
       </dict>
     </dict>
     <dict>
@@ -101,7 +112,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#1c5cc9</string>
+        <string>#5c7eff</string>
       </dict>
     </dict>
     <dict>
@@ -112,7 +123,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#50aee7</string>
+        <string>#55b6f2</string>
       </dict>
     </dict>
     <dict>
@@ -167,7 +178,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#8c6dc3</string>
+        <string>#aa8fd9</string>
       </dict>
     </dict>
     <dict>
@@ -178,7 +189,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#1c5cc9</string>
+        <string>#5c7eff</string>
       </dict>
     </dict>
     <dict>
@@ -189,7 +200,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#e5c07b</string>
+        <string>#5c7eff</string>
       </dict>
     </dict>
     <dict>
@@ -200,7 +211,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#e5c07b</string>
+        <string>#5c7eff</string>
       </dict>
     </dict>
     <dict>
@@ -211,7 +222,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#e5c07b</string>
+        <string>#e5b17c</string>
       </dict>
     </dict>
     <dict>
@@ -222,9 +233,9 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#feb9b9</string>
+        <string>#4a2222</string>
         <key>foreground</key>
-        <string>#1c5cc9</string>
+        <string>#5c7eff</string>
       </dict>
     </dict>
   </array>
