@@ -1,0 +1,16 @@
+{
+   "scope": "source.sail - variable",
+
+   "completions":
+   [
+      { "trigger" : "forEach\tLooping", "contents" : "a!forEach(items:${1:items}, expression:${2:expression})" },
+      { "trigger" : "all\tLooping", "contents" : "all(${1:predicate}, ${2:list}, ${3:[context]})" },
+      { "trigger" : "any\tLooping", "contents" : "any(${1:predicate}, ${2:list}, ${3:[context]})" },
+      { "trigger" : "apply\tLooping", "contents" : "apply(${1:function}, ${2:list}, ${3:[context]})" },
+      { "trigger" : "filter\tLooping", "contents" : "filter(${1:predicate}, ${2:list}, ${3:[context]})" },
+      { "trigger" : "merge\tLooping", "contents" : "merge(${1:[list]})" },
+      { "trigger" : "none\tLooping", "contents" : "none(${1:predicate}, ${2:list}, ${3:[context]})" },
+      { "trigger" : "reduce\tLooping", "contents" : "reduce(${1:function}, ${2:initial}, ${3:list}, ${4:[context]})" },
+      { "trigger" : "reject\tLooping", "contents" : "reject(${1:predicate}, ${2:list}, ${3:[context]})" }
+   ]
+}
