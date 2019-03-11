@@ -4,14 +4,14 @@
 
 ![expression_editor_color_scheme](docs/img/expression_editor_color_scheme_dark.png)
 
-The Appian SAIL for Sublime Text package provides Appian SAIL syntax support for Sublime Text 3 and provides a Appian Expression Editor inspired color scheme. The syntax supports all Appian Functions (through 18.4) to provide code highlighting - perfect for code reviews or when writing SAIL without an internet connection.
+The Appian SAIL for Sublime Text package provides Appian SAIL syntax support for Sublime Text 3 and provides a Appian Expression Editor inspired color scheme. The syntax supports all Appian Functions (through 19.1) to provide code highlighting - perfect for code reviews or when writing SAIL without an internet connection.
 
 ## Features
 
 * Syntax support for Appian SAIL code in Sublime Text 3
 * Light and Dark Color Schemes for Sublime Text 3 that matches the Appian Expression Editor
 * Easily identify deprecated Appian functions via color scheme highlighting
-* Support for Appian 18.4
+* Support for Appian 19.1
 
 ## Installation
 
